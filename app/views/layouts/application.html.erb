@@ -9,8 +9,15 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+  <div class="navbar-wagon">
+  <!-- Logo -->
+  <div class="navbar-wagon-right"><h2>Cocktail Mixer</h1></div>
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+  <div class = "btn btn-success button col-md-6"><%= link_to('Add new', new_cocktail_path) %></div>
+  </div>
+</div>
     <%= yield %>
   </body>
 </html>

@@ -3,10 +3,9 @@
     <div class="text-center">
       <h1>Cocktails</h1>
         <% @cocktails.each do |cocktail| %>
-          <li><h2><%= link_to(cocktail.name, cocktail_path(cocktail)) %></h2></li>
+          <div class = "col-md-6"><h3><%= link_to(cocktail.name, cocktail_path(cocktail)) %></h3></div>
            <br/>
         <% end %>
-        <h2><%= link_to('Add new beverage', new_cocktail_path) %></h2>
     </div>
   </div>
 </div>
