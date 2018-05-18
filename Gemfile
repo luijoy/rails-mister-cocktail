@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.4'
 gem 'bootstrap-sass'
+gem ‘faker’, :git => "https://github.com/stympy/faker.git", :branch => "master"
 gem 'font-awesome-sass', '~> 5.0.9'
 gem 'simple_form'
 gem 'autoprefixer-rails'
