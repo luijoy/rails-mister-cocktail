@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsMisterCocktail</title>
+    <title>Cocktail Mixer</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,12 +12,16 @@
   <body>
   <div class="navbar-wagon">
   <!-- Logo -->
-  <div class="navbar-wagon-right"><h2>Cocktail Mixer</h1></div>
+  <div class="navbar-wagon-right">
+    <h3>
+    <%= link_to('Cocktail Mixer', cocktails_path) %>
+    </h3>
+  </div>
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
   <div class = "btn btn-success button col-md-6"><%= link_to('Add new', new_cocktail_path) %></div>
   </div>
-</div>
+  </div>
     <%= yield %>
   </body>
 </html>

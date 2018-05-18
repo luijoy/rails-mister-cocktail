@@ -5,6 +5,8 @@ body {
 }
 h1 {
   font-size: 16px;
+  padding-top: 30vh;
+  margin-top: 0px;
 }
 
 .button {
@@ -13,4 +15,41 @@ h1 {
     text-decoration: none;
     color: white;
   }
+}
+
+.banner {
+  background-image: url('https://images.unsplash.com/photo-1509807995916-c332365e2d9e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4c8d364e633e2015fbac047f327ce098&w=1000&q=80');
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 200;
+}
+
+.banner-text {
+  color: white;
+  font-size: 36px;
+}
+
+.banner {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.banner p {
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  margin-bottom: 30px;
 }

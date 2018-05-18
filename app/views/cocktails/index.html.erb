@@ -1,7 +1,15 @@
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://media0.trover.com/T/54b313bcd809d8792a000de5/fixedw_large_4x.jpg');">
+  <div class="banner-content">
+    <h1>Cocktail master</h1>
+    <p>Find delicious cocktail recipes</p>
+    <a class="btn btn-primary btn-lg">Make cocktails</a>
+  </div>
+</div>
+
+
 <div class = "container">
   <div class="row">
     <div class="text-center">
-      <h1>Cocktails</h1>
         <% @cocktails.each do |cocktail| %>
           <div class = "col-md-6"><h3><%= link_to(cocktail.name, cocktail_path(cocktail)) %></h3></div>
            <br/>

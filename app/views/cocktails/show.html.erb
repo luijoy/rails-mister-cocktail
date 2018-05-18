@@ -6,6 +6,13 @@
       <p>
         <strong>Name:</strong>
         <%= @cocktail.name %>
+        <% @cocktail.ingredients.each do |ingredient| %>
+        <%= ingredient.name %>
+        <% end %>
+        <% @cocktail.doses.each do |dose| %>
+        <%= dose.description %>
+        <% end %>
+
       </p>
 
       <%= link_to 'Back', cocktails_path %>
